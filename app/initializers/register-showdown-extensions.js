@@ -1,10 +1,10 @@
 export function initialize() {
   showdown.extension("myExtensionName", function() {
-    return [{
+    return {
       type: 'html',
       regex: '<blockquote>',
       replace: '<blockquote class="blockquote">'
-    }];
+    };
   });
 }
 
